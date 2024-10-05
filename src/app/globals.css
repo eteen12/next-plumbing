@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root {
+    --font-dm-sans: "DM Sans", sans-serif;
+    --font-popins: "Poppins", sans-serif;
+    --background: #171717;
+    --foreground: #ffffff;
+  }
+
+  .dm-sans {
+    font-family: var(--font-dm-sans);
+    font-weight: var(--font-weight);
+  }
+  .poppins {
+    font-family: var(--font-popins);
+    font-weight: var(--font-weight);
+  }
