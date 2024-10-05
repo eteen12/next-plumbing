@@ -45,12 +45,16 @@ html{
 }
 .mediumGray {
   color: #d9d9d9;
+}
+.mediumGrayBg {
   background-color: #d9d9d9;
 }
 .lightGray {
   color: #e8e8e8;
-  background-color: #e8e8e8;
 }
+.lightGrayBg {
+  background-color: #e8e8e8;
+} 
 /*border radius for hero mobile image*/
 .borderRadius {
   border-radius: 0 0 70px 70px;
