@@ -18,7 +18,9 @@ export default function NavBarServer() {
           />
         </div>
       </Link>
-      <NavHamburger />
+      <div className="sm:hidden">
+        <NavHamburger />
+      </div>
     </nav>
   );
 }
