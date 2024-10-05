@@ -1,10 +1,10 @@
-import React from 'react';
-import Hero from '@/components/sections/hero';
+import React from "react";
+
 
 export default function Home() {
   return (
-    
-      <Hero />
-   
+    <div>
+      
+    </div>
   );
 }

@@ -18,7 +18,7 @@ export default function NavHamburger() {
         onClick={handleToggle}
       >
         <div className="tham-box">
-          <div className="tham-inner" />
+          <div className="tham-inner " />
         </div>
       </div>
     </>

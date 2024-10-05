@@ -17,4 +17,22 @@
   font-family: var(--font-popins);
   font-weight: var(--font-weight);
 }
-/* Nav hamburger styling */
+/* site colors */
+.darkColor {
+  color: #23262f;
+}
+.blueColor {
+  color: #284faf;
+}
+.greenColor {
+  color: #0b7f58;
+}
+.whiteColor {
+  color: #f8fafc;
+}
+.mediumGray{
+  color:#D9D9D9;
+}
+.lightGray{
+  color:#E8E8E8;
+}
