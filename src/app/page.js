@@ -1,11 +1,12 @@
 import React from "react";
-import Hero from "@/components/sections/hero.jsx";
+import HeroMobile from "@/components/sections/heroMobile.jsx";
+import HeroLarge from "@/components/sections/heroLarge";
 
 export default function Home() {
   return (
     <div>
-      <Hero />
-      
+      <HeroMobile />
+      <HeroLarge />
     </div>
   );
 }
