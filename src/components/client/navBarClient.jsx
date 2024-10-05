@@ -8,7 +8,6 @@ export default function NavBarClient() {
       className={
         "flex justify-between items-center fixed w-full h-16 z-50 transition-all duration-700 whiteColorBg"
       }
-      style={{}}
     >
       <NavBarServer />  
       
