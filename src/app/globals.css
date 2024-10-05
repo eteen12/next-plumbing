@@ -1,12 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+html{
+  background-color: #f8fafc;
+  padding:0;
+  margin:0;
+}
 :root {
   --font-dm-sans: "DM Sans", sans-serif;
   --font-popins: "Poppins", sans-serif;
-  --background: #171717;
-  --foreground: #f8fafc;
 }
 
 .dm-sans {
@@ -17,6 +19,7 @@
   font-family: var(--font-popins);
   font-weight: var(--font-weight);
 }
+
 /* site colors */
 .darkColor {
   color: #23262f;
@@ -47,4 +50,8 @@
 .lightGray {
   color: #e8e8e8;
   background-color: #e8e8e8;
+}
+/*border radius for hero mobile image*/
+.borderRadius {
+  border-radius: 0 0 70px 70px;
 }

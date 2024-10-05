@@ -19,6 +19,9 @@ export default function NavHamburger() {
           "tham-active": opened,
         })}
         onClick={handleToggle}
+        aria-label={opened ? "Close menu" : "Open menu"}
+        aria-expanded={opened}
+        role="button"
       >
         <div className="tham-box">
           <div className="tham-inner darkColor" />
