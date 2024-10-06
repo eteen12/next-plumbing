@@ -3,6 +3,7 @@
 @tailwind utilities;
 html {
   background-color: #f8fafc;
+  overflow-x: hidden;
 }
 :root {
   --font-dm-sans: "DM Sans", sans-serif;

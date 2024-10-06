@@ -12,7 +12,7 @@ import Residential from "/public/services/residential.jpg";
 import Commercial from "/public/services/commercial.jpg";
 import Emergency from "/public/services/emergency.jpg";
 
-export default function Services() {
+export default function CarouselComponent() {
   const services = [
     {
       id: 1,
@@ -42,19 +42,22 @@ export default function Services() {
       <CarouselContent>
         {services.map((service) => (
           <CarouselItem key={service.id}>
-            <Image
-              src={service.image}
-              alt={service.title}
-              className="object-cover w-full h-full rounded-3xl"
-              loading="lazy"
-              fill
-            />
+            <div className="w-full h-full px-10">
+              <div className="relative w-[50%] h-[300px] mx-auto">
+                <Image
+                  src={service.image}
+                  alt={service.alt}
+                  fill
+                  className="object-cover rounded-3xl"
+                />
+              </div>
+            </div>
             <h3>{service.title}</h3>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="absolute top-1/2 left-2 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full cursor-pointer z-10"/>
+      <CarouselNext className="absolute top-1/2 right-2 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full cursor-pointer z-10"/>
     </Carousel>
   );
 }
