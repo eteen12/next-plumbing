@@ -1,10 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html{
+html {
   background-color: #f8fafc;
-  padding:0;
-  margin:0;
 }
 :root {
   --font-dm-sans: "DM Sans", sans-serif;
@@ -54,8 +52,13 @@ html{
 }
 .lightGrayBg {
   background-color: #e8e8e8;
-} 
+}
 /*border radius for hero mobile image*/
-.borderRadius {
+.heroBorderRadius {
   border-radius: 0 0 70px 70px;
+}
+
+/* LOCAL EXPERT SECTION*/
+.borderRadius {
+  border-radius: 0 100px 100px 0;
 }

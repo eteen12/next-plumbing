@@ -31,11 +31,11 @@ export default function HeroMobile() {
       </div>
 
       {/* Image Container */}
-      <div className="relative z-0 h-full">
+      <div className="relative z-0 h-full w-full">
         <Image
           src={HeroImageMobile}
           alt="Plumbing hero image"
-          className="object-cover w-full h-full borderRadius"
+          className="object-cover w-full h-full heroBorderRadius"
           priority
           fill
         />

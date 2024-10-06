@@ -14,7 +14,10 @@ const poppins = Poppins({
   variable: "--font-poppins",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
-
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
