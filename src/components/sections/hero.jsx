@@ -3,7 +3,7 @@ import HeroLarge from "/public/heroLarge.jpg";
 
 export default function Hero() {
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-screen hidden sm:block">
       <div className="hidden sm:block">
         <Image
           src={HeroLarge}
