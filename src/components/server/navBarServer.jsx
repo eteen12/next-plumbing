@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import NavHamburger from "../client/navHamburger";
+import NavHamburger from "../reusables/navHamburger";
 import Logo from "/public/logo.svg";
 import { FaAngleDown } from "react-icons/fa6";
-import DropDownMenu from "../client/dropDownMenu";
+import DropDownMenu from "../reusables/dropDownMenu";
 
 export default function NavBarServer() {
   return (
