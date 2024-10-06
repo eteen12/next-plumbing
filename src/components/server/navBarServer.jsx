@@ -2,14 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 import NavHamburger from "../reusables/navHamburger";
 import Logo from "/public/logo.svg";
-import { FaAngleDown } from "react-icons/fa6";
 import DropDownMenu from "../reusables/dropDownMenu";
 
 export default function NavBarServer() {
   return (
-    <nav className="flex justify-between items-center z-50 h-16 fixed w-[100%] px-5 ">
+    <nav className="flex justify-between items-center shadow-lg z-50 h-16 fixed w-[100%] px-5 lg:px-8 xl:px-12 2xl:px-20">
       <Link href="/" aria-label="Go to Plumbing homepage">
-        <div className="relative w-20 h-20 flex sm:w-24 sm:h-24 ">
+        <div className="relative w-20 h-20 flex sm:w-24 sm:h-24 lg:h-28 lg:w-28 xl:h-32 xl:w-32">
           <Image
             src={Logo}
             alt="Plumbing logo linking to homepage"
