@@ -1,6 +1,6 @@
 import React from "react";
 import HeroMobile from "@/components/sections/heroMobile.jsx";
-import HeroLarge from "@/components/sections/heroLarge";
+import Hero from "@/components/sections/hero";
 import LocalExperts from "@/components/sections/localExperts";
 import Services from "@/components/reusables/carousel";
 
@@ -9,7 +9,7 @@ export default function Home() {
 
       <div>
         <HeroMobile />
-        <HeroLarge />
+        <Hero />
         <LocalExperts />
         <Services />
       </div>

@@ -7,7 +7,7 @@ import DropDownMenu from "../reusables/dropDownMenu";
 
 export default function NavBarServer() {
   return (
-    <nav className="flex justify-between items-center z-50 h-16 fixed w-[100%] px-5">
+    <nav className="flex justify-between items-center z-50 h-16 fixed w-[100%] px-5 ">
       <Link href="/" aria-label="Go to Plumbing homepage">
         <div className="relative w-20 h-20 flex sm:w-24 sm:h-24 ">
           <Image
