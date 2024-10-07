@@ -42,22 +42,28 @@ export default function CarouselComponent() {
       <CarouselContent>
         {services.map((service) => (
           <CarouselItem key={service.id}>
-            <div className="w-full h-full px-10">
-              <div className="relative w-[50%] h-[300px] mx-auto">
+            <div className="w-full h-full mx-auto">
+              <div className="relative w-[90vw] max-w-[350px]  h-[60vh] mx-auto sm:max-w-[450px] md:max-w-[600px] lg:min-w-[800px] lg:min-h-[600px]">
                 <Image
                   src={service.image}
                   alt={service.alt}
                   fill
-                  className="object-cover rounded-3xl"
+                  className="relative object-cover rounded-3xl"
                 />
+                <div className="absolute bottom-0 left-0 w-full h-1/3 p-4 mediumGrayBg text-white z-20 rounded-b-3xl ">
+                  <h3 className="text-xl dm-sans darkColor">{service.title}</h3>
+                  <p className="poppins darkColor text-base mt-5 sm:text-lg whitespace-normal ">
+                    {service.desc}
+                  </p>
+                </div>
               </div>
             </div>
             <h3>{service.title}</h3>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="absolute top-1/2 left-2 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full cursor-pointer z-10"/>
-      <CarouselNext className="absolute top-1/2 right-2 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full cursor-pointer z-10"/>
+      <CarouselPrevious className=" left-2  cursor-pointer z-10 shadow" />
+      <CarouselNext className=" right-2  cursor-pointer z-10 " />
     </Carousel>
   );
 }
