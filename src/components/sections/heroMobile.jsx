@@ -35,7 +35,7 @@ export default function HeroMobile() {
         <Image
           src={HeroImageMobile}
           alt="Plumbing hero image"
-          className="object-cover w-full h-full heroBorderRadius"
+          className="object-cover"
           priority
           fill
         />
