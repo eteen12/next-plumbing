@@ -24,7 +24,6 @@ export default function CarouselComponent() {
       title: "Residential",
       alt: "Residential plumbing image",
       desc: "We provide reliable plumbing services for homes, including repairs and new installations. Whether it's fixing leaks or upgrading your system, we've got you covered.",
-      
     },
     {
       id: 2,

@@ -1,26 +1,34 @@
 "use client";
 import React, { useState } from "react";
 
-export default function CarouselOverlay() {//something i can pass is the name
-
-  const [bgColor, setBgColor] = useState("bg-transparent");
+export default function CarouselOverlay({ title, desc }) {
+  const [isActive, setIsActive] = useState(false);
 
   const handleMouseEnter = () => {
-    setBgColor("bg-blue-800 bg-opacity-90");
+    setIsActive(true);
   };
   const handleClick = () => {
-    setBgColor("bg-blue-800 bg-opacity-90 ");
+    setIsActive(true);
   };
   const handleMouseLeave = () => {
-    setBgColor("bg-transparent bg-opacity-100");
+    setIsActive(false);
   };
   return (
     <div
-      style={{ backgroundColor: bgColor }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={handleClick}
-      className={`absolute h-full w-full z-50 rounded-3xl cursor-pointer transition-colors duration-500 ease-in-out  ${bgColor}`}
-    ></div>
+      className={`absolute h-full w-full z-50 rounded-3xl cursor-pointer transition-colors duration-500 ease-in-out
+      ${
+        isActive ? "bg-blue-800 bg-opacity-90" : "bg-transparent bg-opacity-100"
+      }`}
+    >
+      {isActive && (
+        <div>
+          <h1>{title}</h1>
+          <h2>{desc}</h2>
+        </div>
+      )}
+    </div>
   );
 }
