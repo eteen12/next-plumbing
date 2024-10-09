@@ -9,7 +9,7 @@ import AboutUsLarge from "/public/aboutUsLarge.jpg";
 export default function AboutUs() {
   return (
     <div className="w-full min-h-screen p-5 mt-32 grid grid-cols-1 gap-28 mx-auto sm:p-10 sm:grid-cols-[50%_50%] sm:gap-5  md:p-20 md:max-w-[850px] lg:max-w-[1000px] xl:max-w-[1300px]">
-      <div className="relative mx-auto w-[70vw] h-[72vh] sm:max-w-[260px] sm:max-h-[600px] md:max-w-[330px] md:max-h-[700px] lg:max-w-[400px] lg:min-h-[600px] 
+      <div className="relative mx-auto w-[70vw] h-[72vh] sm:max-w-[260px] sm:max-h-[600px] md:max-w-[300px] md:max-h-[700px] lg:max-w-[400px] lg:min-h-[600px] 
       xl:max-w-[450px] xl:min-h-[700px]">
         {/* Background Image */}
         <div className="blueColorBg w-full h-full rounded-3xl absolute top-0 left-0 z-0 -translate-x-10 -translate-y-10"></div>

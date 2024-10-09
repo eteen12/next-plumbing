@@ -22,7 +22,7 @@ export default function DropDownMenu() {
         }`}
         onClick={toggleDropdown}
       >
-        Dropdown button{" "}
+        More{" "}
         <svg
           className="w-2.5 h-2.5 ms-3"
           aria-hidden="true"
@@ -42,11 +42,11 @@ export default function DropDownMenu() {
 
       <div
         id="dropdown"
-        className={`absolute left-1/2 transform -translate-x-1/2 ml-3 z-10 rounded-br-xl rounded-bl-xl ${
+        className={`absolute mt-2 left-1/2 transform -translate-x-1/2 ml-3 z-10 rounded-br-xl rounded-bl-xl ${
           isOpen ? "block" : "hidden"
-        } whiteColorBg divide-y divide-gray-100 shadow w-40 lg:w-48 `} 
+        } whiteColorBg divide-y shadow w-40 lg:w-48 `} 
       >
-        <ul className="py-2 text-sm poppins darkColor  lg:text-base ">
+        <ul className="py-2 text-sm poppins darkColor lg:text-base ">
           
           <li>
             <Link

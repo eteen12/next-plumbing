@@ -20,8 +20,6 @@ export default function Services() {
         >
           Explore our Range <br /> of Services
         </h2>
-
-        
       </div>
       <div className="w-full h-full">
         <CarouselComponent />
