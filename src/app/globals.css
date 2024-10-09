@@ -34,6 +34,8 @@ html {
 }
 .greenColor {
   color: #0b7f58;
+}
+.greenColorBg {
   background-color: #0b7f58;
 }
 .whiteColor {
@@ -62,6 +64,11 @@ html {
 /* LOCAL EXPERT SECTION*/
 .borderRadius {
   border-radius: 0 150px 150px 0;
+}
+/*carousel section*/
+.rounded-shadow {
+  border-radius: 1.5rem; /* Adjust to match your card’s border-radius */
+  box-shadow: -10px 10px 20px 1px rgba(0, 0, 0, 0.2); /* Left and bottom shadow */
 }
 @layer base {
   :root {

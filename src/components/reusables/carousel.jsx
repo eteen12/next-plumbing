@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -38,24 +39,29 @@ export default function CarouselComponent() {
       desc: "Available 24/7, our emergency services quickly address urgent plumbing issues. We resolve everything from burst pipes to severe leaks, minimizing damage and disruption.",
     },
   ];
+  const [overlay, setOverlay] = useState(false);
+  const [onClick, setOnClick] = useState(false);
+  const [hover, setHover] = useState(false);
 
   return (
     <Carousel>
       <CarouselContent>
         {services.map((service) => (
           <CarouselItem key={service.id}>
-            <div className="w-full h-full mx-auto">
-              <div className="relative w-[90vw] max-w-[350px]  h-[60vh] mx-auto sm:max-w-[450px] md:max-w-[600px] lg:min-w-[800px] lg:min-h-[600px]">
-                <Image
-                  src={service.image}
-                  alt={service.alt}
-                  fill
-                  className="relative object-cover rounded-3xl"
-                />
+            <div className="w-full h-full mx-auto pb-10">
+              <div className="relative w-[90vw] max-w-[350px] h-[60vh] mx-auto sm:max-w-[450px] md:max-w-[600px] lg:min-w-[800px] lg:min-h-[600px] rounded-3xl rounded-shadow">
+                <div className="z-10 ">
+                  <Image
+                    src={service.image}
+                    alt={service.alt}
+                    fill
+                    className="relative object-cover rounded-3xl "
+                  />
+                </div>
                 {/* Desktop */}
-                <div className="absolute bottom-0 left-0 flex flex-col p-4 pl-0 w-5/6 h-20 mediumGrayBg text-white z-20 rounded-bl-3xl rounded-tr-3xl">
+                <div className="absolute bottom-0 left-0 flex flex-col p-4 pl-0 w-5/6 h-20 mediumGrayBg text-white z-10 rounded-bl-3xl rounded-tr-3xl md:h-24 lg:h-28">
                   <div className="flex items-center">
-                    <div className="w-20 h-20 -mt-9 flex-shrink-0">
+                    <div className="w-20 h-20 -mt-9 flex-shrink-0 lg:w-24 lg:h-24">
                       <GiWaterDrop
                         className="w-full h-full blueColor"
                         style={{ filter: "drop-shadow(3px 0px 5px #0B7F58)" }}
@@ -63,7 +69,7 @@ export default function CarouselComponent() {
                     </div>
                     <div className="flex justify-between w-full ml-2 -mt-4 ">
                       <h3
-                        className="text-xl dm-sans darkColor"
+                        className="text-xl dm-sans darkColor md:text-2xl lg:text-3xl"
                         style={{ "--font-weight": "900" }}
                       >
                         {service.title}
@@ -71,8 +77,11 @@ export default function CarouselComponent() {
                       <FaPlus className="darkColor mt-1" />
                     </div>
                   </div>
-                  <p className="darkColor pl-20 ml-2 poppins -mt-5">Services</p>
+                  <p className="greenColor pl-20 ml-2 poppins -mt-5 md:text-lg lg:text-xl lg:pl-24">
+                    Services
+                  </p>
                 </div>
+                <div className="absolute h-full w-full z-50 bg-black rounded-3xl"></div>
               </div>
             </div>
           </CarouselItem>
