@@ -6,6 +6,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { GiWaterDrop } from "react-icons/gi";
+import { FaPlus } from "react-icons/fa";
 import Image from "next/image";
 
 import Residential from "/public/services/residential.jpg";
@@ -50,19 +52,26 @@ export default function CarouselComponent() {
                   fill
                   className="relative object-cover rounded-3xl"
                 />
-                {/* Mobile */}
-                <div className="absolute bottom-0 left-0 w-full h-1/3 p-4 mediumGrayBg text-white z-20 rounded-b-3xl md:hidden">
-                  <h3 className="text-xl dm-sans darkColor">{service.title}</h3>
-                  <p className="poppins darkColor text-base mt-5 sm:text-lg whitespace-normal ">
-                    {service.desc}
-                  </p>
-                </div>
                 {/* Desktop */}
-                <div className="absolute bottom-0 left-0 w-2/5 h-full p-4 mediumGrayBg text-white z-20 rounded-l-3xl hidden md:block">
-                  <h3 className="text-xl dm-sans darkColor">{service.title}</h3>
-                  <p className="poppins darkColor text-base mt-5 sm:text-lg whitespace-normal ">
-                    {service.desc}
-                  </p>
+                <div className="absolute bottom-0 left-0 flex flex-col p-4 pl-0 w-5/6 h-20 mediumGrayBg text-white z-20 rounded-bl-3xl rounded-tr-3xl">
+                  <div className="flex items-center">
+                    <div className="w-20 h-20 -mt-9 flex-shrink-0">
+                      <GiWaterDrop
+                        className="w-full h-full blueColor"
+                        style={{ filter: "drop-shadow(3px 0px 5px #0B7F58)" }}
+                      />
+                    </div>
+                    <div className="flex justify-between w-full ml-2 -mt-4 ">
+                      <h3
+                        className="text-xl dm-sans darkColor"
+                        style={{ "--font-weight": "900" }}
+                      >
+                        {service.title}
+                      </h3>
+                      <FaPlus className="darkColor mt-1" />
+                    </div>
+                  </div>
+                  <p className="darkColor pl-20 ml-2 poppins -mt-5">Services</p>
                 </div>
               </div>
             </div>
