@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-export default function CarouselOverlay({ title, desc }) {
+export default function CarouselOverlay({ title, desc, icon }) {
   const [isActive, setIsActive] = useState(false);
 
   const handleMouseEnter = () => {
@@ -24,9 +24,10 @@ export default function CarouselOverlay({ title, desc }) {
       }`}
     >
       {isActive && (
-        <div>
+        <div className="p-10">
           <h1>{title}</h1>
           <h2>{desc}</h2>
+          <p>{icon}</p>
         </div>
       )}
     </div>

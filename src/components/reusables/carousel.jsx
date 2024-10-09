@@ -11,8 +11,13 @@ import { FaPlus } from "react-icons/fa";
 import Image from "next/image";
 
 import Residential from "/public/services/residential.jpg";
+import { GrHomeRounded } from "react-icons/gr";
+
 import Commercial from "/public/services/commercial.jpg";
+import { LuWarehouse } from "react-icons/lu";
+
 import Emergency from "/public/services/emergency.jpg";
+import { GoAlertFill } from "react-icons/go";
 
 import CarouselOverlay from "./useCarousel";
 
@@ -24,6 +29,7 @@ export default function CarouselComponent() {
       title: "Residential",
       alt: "Residential plumbing image",
       desc: "We provide reliable plumbing services for homes, including repairs and new installations. Whether it's fixing leaks or upgrading your system, we've got you covered.",
+      icon: <GrHomeRounded />,
     },
     {
       id: 2,
@@ -31,6 +37,7 @@ export default function CarouselComponent() {
       title: "Commercial",
       alt: "Commercial plumbing image",
       desc: "Our commercial plumbing services ensure your business runs smoothly with minimal downtime. From routine maintenance to large-scale installations, we handle it all.",
+      icon: <LuWarehouse />,
     },
     {
       id: 3,
@@ -38,6 +45,7 @@ export default function CarouselComponent() {
       title: "Emergency",
       alt: "Emergency plumbing image",
       desc: "Available 24/7, our emergency services quickly address urgent plumbing issues. We resolve everything from burst pipes to severe leaks, minimizing damage and disruption.",
+      icon: <GoAlertFill />,
     },
   ];
   return (
@@ -78,7 +86,11 @@ export default function CarouselComponent() {
                     Services
                   </p>
                 </div>
-                <CarouselOverlay title={service.title} desc={service.desc} />
+                <CarouselOverlay
+                  title={service.title}
+                  desc={service.desc}
+                  icon={service.icon}
+                />
               </div>
             </div>
           </CarouselItem>
