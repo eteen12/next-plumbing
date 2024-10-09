@@ -50,7 +50,15 @@ export default function CarouselComponent() {
                   fill
                   className="relative object-cover rounded-3xl"
                 />
-                <div className="absolute bottom-0 left-0 w-full h-1/3 p-4 mediumGrayBg text-white z-20 rounded-b-3xl ">
+                {/* Mobile */}
+                <div className="absolute bottom-0 left-0 w-full h-1/3 p-4 mediumGrayBg text-white z-20 rounded-b-3xl md:hidden">
+                  <h3 className="text-xl dm-sans darkColor">{service.title}</h3>
+                  <p className="poppins darkColor text-base mt-5 sm:text-lg whitespace-normal ">
+                    {service.desc}
+                  </p>
+                </div>
+                {/* Desktop */}
+                <div className="absolute bottom-0 left-0 w-2/5 h-full p-4 mediumGrayBg text-white z-20 rounded-l-3xl hidden md:block">
                   <h3 className="text-xl dm-sans darkColor">{service.title}</h3>
                   <p className="poppins darkColor text-base mt-5 sm:text-lg whitespace-normal ">
                     {service.desc}
@@ -58,7 +66,6 @@ export default function CarouselComponent() {
                 </div>
               </div>
             </div>
-            <h3>{service.title}</h3>
           </CarouselItem>
         ))}
       </CarouselContent>

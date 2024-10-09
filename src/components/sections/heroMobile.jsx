@@ -9,7 +9,7 @@ export default function HeroMobile() {
       {/* Text Container */}
       <div className="mt-10 flex flex-col justify-center items-center h-full z-10">
         <h1
-          className="darkColor text-5xl font-bold mb-3 darkColor dm-sans text-center text-nowrap"
+          className="darkColor text-4xl font-bold mb-3 darkColor dm-sans text-center text-nowrap"
           style={{ "--font-weight": "600" }}
         >
           Your, plumbing <br />
