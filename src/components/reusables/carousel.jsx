@@ -1,5 +1,4 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import {
   Carousel,
   CarouselContent,
@@ -15,6 +14,8 @@ import Residential from "/public/services/residential.jpg";
 import Commercial from "/public/services/commercial.jpg";
 import Emergency from "/public/services/emergency.jpg";
 
+import CarouselOverlay from "./useCarousel";
+
 export default function CarouselComponent() {
   const services = [
     {
@@ -23,6 +24,7 @@ export default function CarouselComponent() {
       title: "Residential",
       alt: "Residential plumbing image",
       desc: "We provide reliable plumbing services for homes, including repairs and new installations. Whether it's fixing leaks or upgrading your system, we've got you covered.",
+      
     },
     {
       id: 2,
@@ -39,10 +41,6 @@ export default function CarouselComponent() {
       desc: "Available 24/7, our emergency services quickly address urgent plumbing issues. We resolve everything from burst pipes to severe leaks, minimizing damage and disruption.",
     },
   ];
-  const [overlay, setOverlay] = useState(false);
-  const [onClick, setOnClick] = useState(false);
-  const [hover, setHover] = useState(false);
-
   return (
     <Carousel>
       <CarouselContent>
@@ -81,7 +79,7 @@ export default function CarouselComponent() {
                     Services
                   </p>
                 </div>
-                <div className="absolute h-full w-full z-50 bg-black rounded-3xl"></div>
+                <CarouselOverlay title={service.title} desc={service.desc} />
               </div>
             </div>
           </CarouselItem>
