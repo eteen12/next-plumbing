@@ -19,7 +19,7 @@ import { LuWarehouse } from "react-icons/lu";
 import Emergency from "/public/services/emergency.jpg";
 import { GoAlertFill } from "react-icons/go";
 
-import CarouselOverlay from "./useCarousel";
+import CarouselOverlay from "../../hooks/useCarousel";
 
 export default function CarouselComponent() {
   const services = [
