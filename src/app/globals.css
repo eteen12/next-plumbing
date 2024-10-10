@@ -74,11 +74,16 @@ html {
 .custom-shadow {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 -4px 10px rgba(0, 0, 0, 0.2);
 }
-.button-border{
+.button-border {
   border: 3px solid #282c38;
-  
 }
-
+/*PROJECTS SECTION*/
+.border-radius-tl-img {
+  border-radius: 0 0 100px 0;
+}
+.border-radius-br-img {
+  border-radius: 100px 0 0 0;
+}
 @layer base {
   :root {
     --background: 0 0% 100%;

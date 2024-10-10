@@ -4,6 +4,8 @@ import Hero from "@/components/sections/hero";
 import AboutUs from "@/components/sections/aboutUs";
 import Services from "@/components/sections/services";
 import Cta from "@/components/sections/cta";
+import Projects from "@/components/sections/projects";
+import WhyUs from "@/components/reusables/whyUs";
 
 export default function Home() {
   return (
@@ -11,9 +13,10 @@ export default function Home() {
       <HeroMobile />
       <Hero />
       <AboutUs />
+      <WhyUs />
       <Services />
       <Cta />
-      
+      <Projects />
     </div>
   );
 }
