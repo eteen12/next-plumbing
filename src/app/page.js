@@ -6,6 +6,7 @@ import Services from "@/components/sections/services";
 import Cta from "@/components/sections/cta";
 import Projects from "@/components/sections/projects";
 import WhyUs from "@/components/reusables/whyUs";
+import PreFooter from "@/components/reusables/preFooter";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Services />
       <Cta />
       <Projects />
+      <PreFooter /> 
     </div>
   );
 }
