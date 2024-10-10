@@ -70,6 +70,15 @@ html {
   border-radius: 1.5rem; /* Adjust to match your card’s border-radius */
   box-shadow: -10px 10px 20px 1px rgba(0, 0, 0, 0.2); /* Left and bottom shadow */
 }
+/*CTA*/
+.custom-shadow {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+.button-border{
+  border: 3px solid #282c38;
+  
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
